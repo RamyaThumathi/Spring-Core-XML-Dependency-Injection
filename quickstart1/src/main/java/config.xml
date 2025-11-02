@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+       <bean class="Cse.Csebranch.csedata" name="student1">
+       
+       <!-- setters -->
+       
+       <property name="pin">
+       <value>573</value>
+       </property>
+       <property name="name">
+       <value>Ramyaa</value>
+       </property>
+       <property name="branch">
+       <value>CSE</value>
+       </property>
+       </bean>
+       
+      <!-- or -->
+       
+       
+       <bean class="Cse.Csebranch.itdata" name="student2">
+       <property name="pin" value="574"/>
+       <property name="name" value="Hema"/>
+       <property name="branch" value="ECE"/>
+   </bean>
+       
+       
+       
+       
+       <!-- Object injection  or dependency Injection -->
+       <!-- Constructor -->
+       <bean class="Cse.Csebranch.aimldata" name="student3">
+      <constructor-arg name="pin" value="12">
+      </constructor-arg>
+      <constructor-arg name="name" value="thuanju">
+      </constructor-arg>
+      <constructor-arg name="branch" value="mech">
+      </constructor-arg>
+      <constructor-arg name="city" value="vnk">
+      </constructor-arg>
+      
+      
+  
+       
+       </bean>
+       
+         
+        
+        
+</beans>
